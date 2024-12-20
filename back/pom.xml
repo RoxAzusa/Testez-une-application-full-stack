@@ -17,6 +17,10 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		<dep.junit.version>5.5.1</dep.junit.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
 	</properties>
 
 	<dependencies>
@@ -68,6 +72,7 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
+            <version>1.18.30</version>
         </dependency>
 
 		<dependency>
@@ -104,7 +109,15 @@
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
-				<version>0.8.5</version>
+				<version>0.8.11</version>
+				<configuration>
+					<excludes>
+						<exclude>com/openclassrooms/starterjwt/mapper/*</exclude>
+						<exclude>com/openclassrooms/starterjwt/dto/*</exclude>
+						<exclude>com/openclassrooms/starterjwt/models/*</exclude>
+						<exclude>com/openclassrooms/starterjwt/payload/**</exclude>
+					</excludes>
+				</configuration>
 				<executions>
 					<execution>
 						<goals>

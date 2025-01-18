@@ -116,6 +116,8 @@
 						<exclude>com/openclassrooms/starterjwt/dto/*</exclude>
 						<exclude>com/openclassrooms/starterjwt/models/*</exclude>
 						<exclude>com/openclassrooms/starterjwt/payload/**</exclude>
+						<exclude>com/openclassrooms/starterjwt/security/services/*</exclude>
+						<exclude>com/openclassrooms/starterjwt/security/jwt/*</exclude>
 					</excludes>
 				</configuration>
 				<executions>

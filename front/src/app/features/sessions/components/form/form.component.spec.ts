@@ -103,7 +103,7 @@ describe('FormComponent', () => {
       id: 1,
       name: 'yoga',
       description: 'yoga',
-      date: new Date,
+      date: new Date('2025-01-18'),
       teacher_id: 1,
       users: [1],
       createdAt: new Date,
